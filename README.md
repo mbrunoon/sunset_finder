@@ -1,25 +1,29 @@
 # README
 
-## To install:
 
-'''$ rails db:create'''
-'''$ rails s'''
+## To install and run:
 
+- Get a API Key in [Geocoding API](https://geocode.maps.co) and add in a `GEOCODE_KEY` environment variable.
+- Run the application:    
+  - Create database: `rails db:create`
+  - Run Migrations: `rails db:migrate`
+  - Run rails server: `rails s`
 
+## Database model
 
-## Resources
+- **Sunsets**:
+  - location: string
+  - occurs_at: date
+  - data: json
+  
+## APIs consulted
 
-- Postgres
-- Redis
+- [Sunset API](https://sunrisesunset.io/api/): return sunset data;
+- [Geocoding API](https://geocode.maps.co): get lat,long from location;
 
-### Model
-
-Generator:
-```rails g model Sunset location:string occurs_at:date date:date data:json```
-
-## API connecteds
-
-- 
-- Geocode: https://geocode.maps.co
-
-
+## Remaining activities
+- Write more automated tests involving different scenarios;
+- Implement Redis cache;
+- Create a docker environment (and docker compose file);
+- Deploy in a Heroku Server;
+- Front-end development;
