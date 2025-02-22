@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  location: MyString
+  date_start: 2025-02-21
+  date_end: 2025-02-21
+  data: 
+
+two:
+  location: MyString
+  date_start: 2025-02-21
+  date_end: 2025-02-21
+  data: 
